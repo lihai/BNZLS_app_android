@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:paddingTop="@dimen/group_padding"
+            android:paddingBottom="@dimen/group_padding">
+            
+            <LinearLayout
+                android:id="@+id/avatar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_item_style"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" 
+                android:layout_marginLeft="@dimen/standard_padding" 
+        		android:layout_marginRight="@dimen/standard_padding">
+
+                <TextView
+                    android:id="@+id/mypic"
+                    style="@style/input_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="@dimen/standard_padding"
+                    android:text="@string/my_account"/>
+
+                <ImageView
+                    android:id="@+id/my_avatar"
+                    android:layout_width="@dimen/invitees_avatar_width"
+                    android:layout_height="@dimen/invitees_avatar_height"
+                    android:layout_margin="@dimen/standard_padding"
+                    android:src="@drawable/my_avatar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_create_account"
+                    android:layout_marginRight="@dimen/default_padding" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/statistic"
+                style="@style/TextView_With_Drawable"
+                android:layout_marginTop="@dimen/setting_padding"
+                android:layout_width="match_parent"
+                android:text="@string/my_statistic" />
+
+            <TextView
+                android:id="@+id/chart"
+                style="@style/TextView_With_Drawable"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/setting_padding"
+                android:text="@string/chart" />
+
+            <TextView
+                android:id="@+id/my_account"
+                style="@style/TextView_With_Drawable"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/setting_padding"
+                android:text="@string/my_account" />          
+
+            <TextView
+                android:id="@+id/ranking"
+                style="@style/TextView_With_Drawable"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="@string/my_ranking" />
+            
+            <!-- 
+              <TextView
+                android:id="@+id/help"
+                style="@style/TextView_With_Drawable"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/setting_padding"
+                android:text="@string/help" />
+
+            <TextView
+                android:id="@+id/about"
+                style="@style/TextView_With_Drawable"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/setting_padding"
+                android:text="@string/about" />
+                 -->
+
+            <!-- 
+            <Button
+                android:id="@+id/log_off_button"
+                style="@style/medium_button_text_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginLeft="@dimen/standard_padding"
+                android:layout_marginRight="@dimen/standard_padding"
+                android:layout_marginTop="@dimen/group_padding"
+                android:background="@drawable/btn_red_style"
+                android:padding="@dimen/standard_padding"
+                android:text="@string/log_off" />
+                
+                 -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

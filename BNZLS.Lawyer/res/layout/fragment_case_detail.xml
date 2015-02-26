@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_question"
+        android:textSize="22sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <TextView
+        android:id="@+id/question_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:text="ksljflasjfdas;ljfdsaljdflksajflsjafldksjflkajflskajfdlk"
+        />
+    
+    <TextView
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_request"
+        android:textSize="22sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <TextView
+        android:id="@+id/request_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:text="ksljflasjfdas;ljfdsaljdflksajflsjafldksjflkajflskajfdlk"
+        />
+    
+    <ImageButton android:id="@+id/dialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"        
+        android:layout_gravity="bottom|center_horizontal"
+        android:state_enabled="false"
+        android:background="@drawable/phone_btn_call" />
+    
+    "
+
+</LinearLayout>

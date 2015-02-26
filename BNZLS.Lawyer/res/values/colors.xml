@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="window_background">#e8f3ff</color>
+    <color name="meeting_list_item_host_color">#338cf1</color>
+    <color name="setting_item_press">#7fcdfd</color>
+    <color name="press_effert">#c0000000</color>
+    <color name="mutable_text">#4682B4</color>
+    <color name="immutable_text">#808080</color>
+    <color name="hint_text">#b5b5b5</color>
+</resources>
