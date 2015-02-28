@@ -24,8 +24,7 @@ public class MainActivity extends Activity{
 		this.initPagers();
 		
 	}
-
-
+	
 
 	private void initPagers() {
 		// TODO Auto-generated method stub

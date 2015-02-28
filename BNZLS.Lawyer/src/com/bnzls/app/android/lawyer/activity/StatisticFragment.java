@@ -12,7 +12,7 @@ public class StatisticFragment extends Fragment{
 	public static final int TAB_INDEX = 2;
 	
 	
-	
+	/***
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -21,4 +21,5 @@ public class StatisticFragment extends Fragment{
 //		View root = inflater.inflate(R.layout.frag, root)
 		
 	}
+	***/
 }

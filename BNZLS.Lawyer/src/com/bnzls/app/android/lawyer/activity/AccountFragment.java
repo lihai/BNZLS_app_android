@@ -12,12 +12,17 @@ public class AccountFragment extends Fragment
 {
 	public static final int TAB_INDEX = 3;
 	
+	
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		return super.onCreateView(inflater, container, savedInstanceState);
+//		return super.onCreateView(inflater, container, savedInstanceState);
 		
-//		View root  = inflater.inflate(R.layout.fragment, root)
+		View root  = inflater.inflate(R.layout.fragment_setting, container, false);
+		
+		return root;
 	}
+	
 }
