@@ -6,11 +6,14 @@ import com.bnzls.app.android.lawyer.R;
 import com.bnzls.app.android.model.ServiceCase;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -44,6 +47,17 @@ public class CaseListFragment extends Fragment{
 		ListView lst = (ListView)root.findViewById(R.id.lst_case);
 		if(lst != null){
 			lst.setAdapter(_adapter);
+			lst.setOnItemClickListener(new OnItemClickListener() {
+
+				@Override
+				public void onItemClick(AdapterView<?> parent, View view,
+						int position, long id) {
+					// TODO Auto-generated method stub
+					Intent intent =new Intent(CaseListFragment.this.getActivity(), CaseDetailActivity.class);
+//					intent.setc
+					CaseListFragment.this.getActivity().startActivity(intent);
+				}
+			});
 		}
 		return root;
 	}

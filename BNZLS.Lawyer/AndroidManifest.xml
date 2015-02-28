@@ -35,7 +35,11 @@
         </activity>
         <activity 
             android:name="com.bnzls.app.android.LoginActivity"></activity>
-        
+        <activity
+            android:name="com.bnzls.app.android.lawyer.activity.CaseDetailActivity"/>
+        <activity
+            android:name="com.bnzls.app.android.lawyer.activity.CommentDetailActivity"/>
+               
         
     </application>
 

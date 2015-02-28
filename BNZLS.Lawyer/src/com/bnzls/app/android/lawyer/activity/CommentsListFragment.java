@@ -7,6 +7,7 @@ import com.bnzls.app.android.model.ServiceComment;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,8 +52,8 @@ public class CommentsListFragment extends Fragment{
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
-				
-				
+				Intent intent = new Intent(CommentsListFragment.this.getActivity(), CommentDetailActivity.class);
+				CommentsListFragment.this.startActivity(intent);
 			}
 		});
 		return root;
