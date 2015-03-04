@@ -4,5 +4,121 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-
+    <include layout="@layout/navigation_bar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_answer"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        <TextView
+            android:id="@+id/answer_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="18sp"
+            android:text="2015-03-02 10:23"
+            />
+        </LinearLayout>
+     
+         <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_duration"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        <TextView
+            android:id="@+id/answer_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="18sp"
+            android:text="3 day and 20 hours"
+            />
+        </LinearLayout>
+        
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_ranking"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        
+    </LinearLayout>
+    
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/group_padding"
+         android:layout_marginLeft="@dimen/group_padding"
+         android:textSize="18sp"
+         android:text="@string/label_comments"
+         />
+	<TextView
+	    android:id="@+id/comment_content"
+	    android:layout_marginLeft="@dimen/group_padding"
+	    android:layout_marginRight="@dimen/group_padding"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:background="@drawable/custom_border"
+	    android:text="Thanks for the great service and basically solved my issue and the whole process was a extradinary experience! Thanks agin!"
+	    />
+ 
+	<TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/group_padding"
+         android:layout_marginLeft="@dimen/group_padding"
+         android:textSize="18sp"
+         android:text="@string/label_reply"
+         />
+         
+	<EditText
+	    android:id="@+id/reply_content"
+	    android:layout_marginLeft="@dimen/group_padding"
+	    android:layout_marginRight="@dimen/group_padding"
+	    android:layout_width="match_parent"
+	    android:layout_height="64dp"
+	    android:textSize="18sp"
+	    android:background="@drawable/custom_border"
+	    android:text="plese enter, not more than 50 letters."
+	    
+	    />
+	
+	<Button 
+	    android:id="@+id/commit"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/log_in_button_height"
+	    android:background="@drawable/btn_plain_green_style"
+	    android:text="@string/label_commit"
+	    android:layout_marginLeft="@dimen/group_padding"
+	    android:layout_marginRight="@dimen/group_padding"
+	    android:layout_marginTop="@dimen/group_padding"
+	    />
 </LinearLayout>

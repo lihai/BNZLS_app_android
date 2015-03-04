@@ -3,12 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
-    <include
-        android:id="@+id/title"
-        android:layout_alignParentTop="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/main_title_bar"/>
     
     <include
         android:id="@+id/tab"
@@ -22,6 +16,7 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        
         android:layout_above="@id/tab"/>
     
     

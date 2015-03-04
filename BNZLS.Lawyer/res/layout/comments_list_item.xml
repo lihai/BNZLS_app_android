@@ -22,7 +22,7 @@
         android:textSize="18sp"
         android:layout_alignParentLeft="true"
         android:layout_toLeftOf="@id/img_next"
-        android:text="aslkjfdlakjldskjfkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkj"
+        android:text="Mrs. Li: Good \n Thank you very much on helping me out, this case is ..."
         />
     
     <TextView

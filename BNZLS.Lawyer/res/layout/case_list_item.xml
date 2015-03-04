@@ -51,7 +51,7 @@
             android:fontFamily="Roboto"
             android:textColor="#BBBBBB"
             android:textSize="18sp"
-            android:text="case: xxxxxxxx \\ndetail: nnnnnnnnnnnnn"
+            android:text="case: RealEstate Related \ndetail: My house is ready to sell, but ..."
             />
         
         <ImageView 

@@ -22,7 +22,7 @@
         android:background="@drawable/custom_border"
         android:textSize="18sp"
         style="@style/content_margin_style"
-        android:text="ksljflasjfdas;ljfdsaljdflksajflsjafldksjflkajflskajfdlk"
+        android:text="I want to sell my house, which is the legacy property that my grand grand parent left me, but I can't find the file or documents to prove it."
         />
     
     <TextView
@@ -43,7 +43,7 @@
         android:background="@drawable/custom_border"
         android:textSize="18sp"
         style="@style/content_margin_style"
-        android:text="ksljflasjfdas;ljfdsaljdflksajflsjafldksjflkajflskajfdlk"
+        android:text="What shoud I do to sell the house."
         />
     
     <ImageButton android:id="@+id/dialButton"

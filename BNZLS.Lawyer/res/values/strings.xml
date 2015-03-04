@@ -30,5 +30,12 @@
     <string name="createaccount">Create Account</string>
     <string name="forget_pass">Forget Password</string>
     
-
+	<string name="label_answer">Answer</string>
+	<string name="label_duration">Duration</string>
+	<string name="label_ranking">Ranking</string>
+	<string name="label_style">style</string>
+	<string name="label_attitude">Attitude</string>
+	<string name="label_comments">Comments</string>
+	<string name="label_reply">Reply</string>
+	<string name="label_commit">Commit</string>
 </resources>
