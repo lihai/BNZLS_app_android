@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BNZLS.User</string>
+    <string name="app_name">BNZLS.Lawyer</string>
     <string name="hello_world">Hello world!</string>
-
+    
+    <string name="tab_label_settings">My</string>
+    <string name ="tab_label_service">Service</string>
+    <string name="tab_label_rating">Rating</string>
+    <string name="tab_label_home">Home</string>
+    <string name="my_statistic">Information Statistic</string>
+    <string name="chart">Ranking Chart</string>
+    <string name="my_account">My Account</string>
+    <string name="my_ranking">My Ranking</string>
+    <string name="preference">Setting</string>
+    <string name="enable_privacy">Enable Secret Code</string>
+    <string name="label_question">Question</string>
+    <string name="label_request">Request</string>
+    <string name="register_progress_signing_in">Registering&#8230;</string>
+    <string name="prompt_email_account">Please input email address as account</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="accept">I accept Rainbow</string>
+    <string name="terms_and_conditions"><u> terms and conditions</u></string>
+    <string name="register">Register</string>
+    <string name="use_existing_account">Log in by using existing account</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="prompt_email">Email Or Mobile</string>
+    <string name="action_sign_in_register">Sign in</string>
+    <string name="createaccount">Create Account</string>
+    <string name="forget_pass">Forget Password</string>
+    
+	<string name="label_answer">Answer</string>
+	<string name="label_duration">Duration</string>
+	<string name="label_ranking">Ranking</string>
+	<string name="label_style">style</string>
+	<string name="label_attitude">Attitude</string>
+	<string name="label_comments">Comments</string>
+	<string name="label_reply">Reply</string>
+	<string name="label_commit">Commit</string>
 </resources>
