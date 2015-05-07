@@ -2,8 +2,105 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp">
     
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        
+        <ImageView 
+            android:id="@+id/avatar"
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/my_avatar"/>
+
+        <TextView
+            android:id="@+id/lawyer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="Lawyer Li"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/lawyer_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lawyer_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="Finance, Crime"
+            android:textSize="10sp" />
+        
+        <ImageView
+            android:id="@+id/reaction_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_dial_action_call_press"
+            />
+        
+        <TextView
+            android:id="@+id/reaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/reaction_icon"
+            android:textSize="12sp"
+            android:text="Within 12Hr"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+"
+        
+    </RelativeLayout>
     
+    <!-- 
+    <View 
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"/>
+     -->
+     
+     <RelativeLayout 
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         
+         <TextView 
+             android:id="@+id/subject"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+           
+            android:text="Expert:"
+            android:textSize="16sp"
+             />
+         
+         <TextView 
+             android:id="@+id/comment"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/subject"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="abcdefg, hijklmn, \n opq rst uv\n wxyz"
+            android:textSize="10sp"
+             />
+     </RelativeLayout>
+     
+     <View 
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"/>
 
 </LinearLayout>
