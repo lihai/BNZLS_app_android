@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_bar_height"
+    android:background="@drawable/navigation" >
+    
+    <Button
+        android:id="@+id/nav_back"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/navigation_bar_button_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding"
+        android:background="@drawable/nav_back_style"
+        android:paddingLeft="@dimen/navigation_left_padding"
+        android:paddingRight="@dimen/standard_padding" 
+        android:minWidth="64dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding" >
+
+        <Button
+            android:id="@+id/nav_next"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/navigation_bar_button_height"
+            android:layout_gravity="center"
+            android:background="@drawable/nav_next_style"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding" 
+            android:minWidth="64dp"/>
+
+        <ImageView
+            android:id="@+id/nav_next_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/navigation_bar_image_height"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/standard_padding"
+            android:paddingRight="@dimen/standard_padding"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nav_title"
+        style="@style/title_big_font_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="@dimen/navigation_max_width"
+        android:textIsSelectable="false" />
+
+</RelativeLayout>

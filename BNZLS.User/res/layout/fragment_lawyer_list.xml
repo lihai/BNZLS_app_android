@@ -4,5 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <include layout="@layout/search_bar"/>
+    <include layout="@layout/lawyer_filter_bar"/>
+    
+    <ListView 
+        android:id="@+id/lst_lawyer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
 
 </LinearLayout>

@@ -38,4 +38,8 @@
 	<string name="label_comments">Comments</string>
 	<string name="label_reply">Reply</string>
 	<string name="label_commit">Commit</string>
+	
+	<string name="btn_lawyercat">Category</string>
+	<string name="btn_location">Location</string>
+	<string name="btn_sort">Sort</string>
 </resources>
