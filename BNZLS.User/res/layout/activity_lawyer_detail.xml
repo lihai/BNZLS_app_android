@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <include layout="@layout/navigation_bar"
+        android:id="@+id/nav"
+       />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/nav"
+        >
+        
+        <ImageView 
+            android:id="@+id/lawyer_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/chat_avatar"/>
+        
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="Brad Pitt"
+            android:layout_toRightOf="@+id/lawyer_avatar"
+            android:layout_alignParentTop="true"/>
+        
+        <Button 
+            android:id="@+id/btn_voice"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_plain_green"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:layout_marginLeft="10dp"/>
+        
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/btn_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_inquire"
+        android:background="@drawable/btn_plain_green_style"
+        android:layout_margin="5dp"
+        
+        android:layout_alignParentBottom="true"/>
 
-</LinearLayout>
+</RelativeLayout>

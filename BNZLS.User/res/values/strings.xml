@@ -42,4 +42,8 @@
 	<string name="btn_lawyercat">Category</string>
 	<string name="btn_location">Location</string>
 	<string name="btn_sort">Sort</string>
+	
+	<string name="btn_inquire">Inquire</string>
+	
+	<string name="label_lawyer_name">Lawyer Name</string>
 </resources>
