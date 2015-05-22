@@ -46,4 +46,13 @@
 	<string name="btn_inquire">Inquire</string>
 	
 	<string name="label_lawyer_name">Lawyer Name</string>
+	
+	<string name="label_telephone">Telephone</string>
+	<string name="label_title">Title</string>
+	<string name="label_name">Name</string>
+	<string name="label_starttime">Start time</string>
+	<string name="label_category">Category</string>
+	<string name="label_answer_time">Answer time</string>
+	
+	<string name="btn_comment">Goto comments</string>
 </resources>

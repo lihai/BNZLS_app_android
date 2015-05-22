@@ -38,4 +38,5 @@
 	<string name="label_comments">Comments</string>
 	<string name="label_reply">Reply</string>
 	<string name="label_commit">Commit</string>
+	<string name="btn_reply">Reply</string>
 </resources>

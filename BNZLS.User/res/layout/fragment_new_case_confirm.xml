@@ -4,5 +4,92 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <include layout="@layout/navigation_bar"/>
 
+    <TextView
+	    android:id="@+id/desc"
+	    android:layout_marginTop="@dimen/group_padding"
+	    android:layout_marginLeft="@dimen/group_padding"
+	    android:layout_marginRight="@dimen/group_padding"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:background="@drawable/custom_border"
+	    android:text="Thanks for the great service and basically solved my issue and the whole process was a extradinary experience! Thanks agin!"
+	    />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_name"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="18sp"
+            android:text="2015-03-02 10:23"
+            />
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_title"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mr."/>
+        
+        <RadioButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mrs/Miss."/>
+        
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_telephone"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="18sp"
+            android:text="2015-03-02 10:23"
+            />
+        </LinearLayout>
 </LinearLayout>

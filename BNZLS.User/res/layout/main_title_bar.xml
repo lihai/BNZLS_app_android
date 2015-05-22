@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigation_bar_height"
+    android:background="@drawable/navigation" >
+    <TextView 
+        android:id="@+id/title_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/title_small_font_style"
+        
+        android:text="Title"
+        />
+
+</RelativeLayout>
