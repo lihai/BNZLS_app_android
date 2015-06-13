@@ -72,11 +72,11 @@
                 android:text="@string/my_account" />          
 
             <TextView
-                android:id="@+id/ranking"
+                android:id="@+id/setting"
                 style="@style/TextView_With_Drawable"
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
-                android:text="@string/my_ranking" />
+                android:text="@string/my_setting" />
             
             <!-- 
               <TextView

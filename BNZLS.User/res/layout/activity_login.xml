@@ -57,7 +57,7 @@
             android:orientation="vertical"
             android:paddingLeft="@dimen/log_in_padding"
             android:paddingRight="@dimen/log_in_padding"
-            android:visibility="gone" >
+            android:visibility="visible" >
 
             <ImageView
                 android:id="@id/login_logo"

@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="@string/label_answer"
+            android:text="@string/label_lawyer_name"
             android:layout_marginRight="@dimen/content_margin"
             />
         <TextView
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/secondary_text_dark"
             android:textSize="18sp"
-            android:text="2015-03-02 10:23"
+            android:text="Mr. Zang Yi"
             />
         </LinearLayout>
         
@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="@string/label_answer"
+            android:text="@string/label_category"
             android:layout_marginRight="@dimen/content_margin"
             />
         <TextView
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/secondary_text_dark"
             android:textSize="18sp"
-            android:text="2015-03-02 10:23"
+            android:text="Realestate"
             />
         </LinearLayout>
         
@@ -60,7 +60,7 @@
          android:layout_marginTop="@dimen/group_padding"
          android:layout_marginLeft="@dimen/group_padding"
          android:textSize="18sp"
-         android:text="@string/label_comments"
+         android:text="@string/label_desc"
          />
 	<TextView
 	    android:id="@+id/desc"
@@ -79,7 +79,7 @@
          android:layout_marginTop="@dimen/group_padding"
          android:layout_marginLeft="@dimen/group_padding"
          android:textSize="18sp"
-         android:text="@string/label_comments"
+         android:text="@string/label_appeal"
          />
 	<TextView
 	    android:id="@+id/requirement"

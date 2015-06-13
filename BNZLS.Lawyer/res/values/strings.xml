@@ -12,6 +12,7 @@
     <string name="chart">Ranking Chart</string>
     <string name="my_account">My Account</string>
     <string name="my_ranking">My Ranking</string>
+    <string name="my_setting">Setting</string>
     <string name="preference">Setting</string>
     <string name="enable_privacy">Enable Secret Code</string>
     <string name="label_question">Question</string>
@@ -39,4 +40,6 @@
 	<string name="label_reply">Reply</string>
 	<string name="label_commit">Commit</string>
 	<string name="btn_reply">Reply</string>
+	
+	<string name ="btn_change_pic">Change photo</string>
 </resources>
