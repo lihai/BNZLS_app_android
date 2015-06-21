@@ -9,7 +9,7 @@ import android.view.View;
 
 public class MainPagerAdapter extends FragmentPagerAdapter{
 
-	private static final int TAB_COUNT = 4;
+	private static final int TAB_COUNT = 3;
 	
 	public MainPagerAdapter(FragmentManager fm) {
 		super(fm);
@@ -20,15 +20,18 @@ public class MainPagerAdapter extends FragmentPagerAdapter{
 	public Fragment getItem(int position) {
 		// TODO Auto-generated method stub
 		switch(position){
+		case HomeFragment.TAB_INDEX:
+			return new HomeFragment();
+			
 		case CaseListFragment.TAB_INDEX:
 			return new CaseListFragment();
 			
-		case CommentsListFragment.TAB_INDEX:
-			return new CommentsListFragment();
-			
-		case StatisticFragment.TAB_INDEX:
-			return new StatisticFragment();
-			
+//		case CommentsListFragment.TAB_INDEX:
+//			return new CommentsListFragment();
+//			
+//		case StatisticFragment.TAB_INDEX:
+//			return new StatisticFragment();
+//			
 		case AccountFragment.TAB_INDEX:
 			return new AccountFragment();
 		}

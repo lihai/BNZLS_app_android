@@ -16,10 +16,11 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class CaseListFragment extends Fragment{
 	
-	public static final int TAB_INDEX = 0;
+	public static final int TAB_INDEX = 1;
 	
 	private CaseListAdapter _adapter;
 	private ArrayList<ServiceCase> _caseList;
@@ -44,6 +45,9 @@ public class CaseListFragment extends Fragment{
 		// TODO Auto-generated method stub
 //		return super.onCreateView(inflater, container, savedInstanceState);
 		View root = inflater.inflate(R.layout.fragment_case_list,container, false);
+		TextView txtTitle = (TextView)root.findViewById(R.id.title_txt);
+		txtTitle.setText(R.string.label_case_list);
+		
 		ListView lst = (ListView)root.findViewById(R.id.lst_case);
 		if(lst != null){
 			lst.setAdapter(_adapter);
@@ -54,7 +58,9 @@ public class CaseListFragment extends Fragment{
 						int position, long id) {
 					// TODO Auto-generated method stub
 					Intent intent =new Intent(CaseListFragment.this.getActivity(), CaseDetailActivity.class);
-//					intent.setc
+					intent.putExtra(CaseDetailActivity.CLIENT_NAME, "Ms Zhao");
+					intent.putExtra(CaseDetailActivity.CLIENT_PHONE, "1333333333");
+					
 					CaseListFragment.this.getActivity().startActivity(intent);
 				}
 			});

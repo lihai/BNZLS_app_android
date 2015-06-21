@@ -13,5 +13,15 @@
         
         android:text="Title"
         />
+    
+    <TextView 
+        android:id="@+id/login_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:text="@string/label_loggedin"/>
 
 </RelativeLayout>

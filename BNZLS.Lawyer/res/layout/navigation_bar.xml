@@ -17,7 +17,8 @@
         android:background="@drawable/nav_back_style"
         android:paddingLeft="@dimen/navigation_left_padding"
         android:paddingRight="@dimen/standard_padding" 
-        android:minWidth="64dp"/>
+        android:minWidth="64dp"
+        android:text="@string/btn_back"/>
 
     <FrameLayout
         android:layout_width="wrap_content"

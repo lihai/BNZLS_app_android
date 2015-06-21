@@ -5,8 +5,11 @@
      android:layout_height="match_parent"
      android:orientation="vertical">
      
+    <!-- 
     <include layout="@layout/main_title_bar"/>
-    
+     -->
+     <include layout="@layout/navigation_bar"/>
+     
 <ListView
     android:layout_width="match_parent"
     android:layout_height="match_parent" 

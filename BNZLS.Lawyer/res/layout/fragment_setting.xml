@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+    <include layout="@layout/main_title_bar"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -58,11 +58,11 @@
                 android:text="@string/my_statistic" />
 
             <TextView
-                android:id="@+id/chart"
+                android:id="@+id/comments"
                 style="@style/TextView_With_Drawable"
                 android:layout_width="match_parent"
                 android:layout_marginTop="@dimen/setting_padding"
-                android:text="@string/chart" />
+                android:text="@string/label_my_comments" />
 
             <TextView
                 android:id="@+id/my_account"

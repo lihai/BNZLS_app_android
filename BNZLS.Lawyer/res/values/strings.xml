@@ -3,6 +3,7 @@
 
     <string name="app_name">BNZLS.Lawyer</string>
     <string name="hello_world">Hello world!</string>
+    <string name="label_main_title">BNZLS - Find the right lawyer!</string>
     
     <string name="tab_label_settings">My</string>
     <string name ="tab_label_service">Service</string>
@@ -10,6 +11,7 @@
     <string name="tab_label_home">Home</string>
     <string name="my_statistic">Information Statistic</string>
     <string name="chart">Ranking Chart</string>
+    <string name="label_my_comments">My Comments</string>
     <string name="my_account">My Account</string>
     <string name="my_ranking">My Ranking</string>
     <string name="my_setting">Setting</string>
@@ -42,4 +44,13 @@
 	<string name="btn_reply">Reply</string>
 	
 	<string name ="btn_change_pic">Change photo</string>
+	<string name = "btn_back">Back</string>
+	<string name="label_login">Login</string>
+	<string name="label_loggedin">Logged in</string>
+	<string name="btn_promote_txt">Want to be shown on top?\n Only $1 per day!</string>
+	<string name="btn_fee_calc_txt">Legal cost calculator</string>
+	<string name="court_addr_txt">Court address query</string>
+	<string name="btn_more_txt">More…, &#8230;</string>
+	<string name="label_case_list">Case List</string>
+	<string name="label_comments_lsit">Comment List</string>
 </resources>

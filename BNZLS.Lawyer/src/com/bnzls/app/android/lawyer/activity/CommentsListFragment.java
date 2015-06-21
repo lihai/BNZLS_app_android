@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
@@ -42,6 +43,9 @@ public class CommentsListFragment extends Fragment{
 		// TODO Auto-generated method stub
 //		return super.onCreateView(inflater, container, savedInstanceState);
 		View root = inflater.inflate(R.layout.fragment_comments_list, container, false);
+		TextView txtTitle = (TextView)root.findViewById(R.id.title_txt);
+		txtTitle.setText(R.string.label_comments_lsit);
+		
 		ListView list = (ListView)root.findViewById(R.id.lst_comment);
 		if(list != null){
 			list.setAdapter(this._adapter);
