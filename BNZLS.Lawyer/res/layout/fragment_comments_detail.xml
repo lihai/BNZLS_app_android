@@ -107,7 +107,7 @@
 	    android:layout_height="64dp"
 	    android:textSize="18sp"
 	    android:background="@drawable/custom_border"
-	    android:text="plese enter, not more than 50 letters."
+	    android:hint="plese enter, not more than 50 letters."
 	    
 	    />
 	

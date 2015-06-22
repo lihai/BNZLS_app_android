@@ -104,5 +104,49 @@
         <item name="android:shadowDy">-2</item>
         <item name="android:shadowRadius">1</item>
     </style>
+    
+    
+    <style name="contactValueTextStyle">
+		<item name="android:textColor">#999999</item>
+		<item name="android:textSize">17sp</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">40dip</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:layout_marginLeft">15dip</item>
+		<item name="android:layout_marginRight">15dip</item>
+	</style>
+	
+    <style name="contactItemDividerStyle">
+		<item name="android:background">#444141</item>
+		<item name="android:layout_height">1px</item>
+		<item name="android:layout_width">match_parent</item>
+	</style>
+	
+    <style name="imdialog" parent="@android:style/Theme.Dialog">
+        <!--   <item name="android:windowFrame">@null</item> -->
+          <item name="android:windowIsFloating">true</item>       
+            <item
+            name="android:windowBackground">@android:color/black</item>    
+          <item name="android:windowNoTitle">true</item>   
+          <item name="android:backgroundDimEnabled">true</item>
+    </style>
+	
+	<style name="dialog" parent="@android:style/Theme.Dialog">
+        <!--   <item name="android:windowFrame">@null</item> -->
+          <item name="android:windowIsFloating">true</item>       
+            <item
+            name="android:windowBackground">@android:color/transparent</item>    
+          <item name="android:windowNoTitle">true</item>   
+          <item name="android:backgroundDimEnabled">true</item>
+    </style>
+	
+	<style name="dialogd" parent="@android:style/Theme.Dialog">    
+          <item name="android:windowNoTitle">true</item>
+          <item name="android:background">@null</item>
+          <item name="android:windowBackground">@android:color/transparent</item>
+          <item name="android:backgroundDimEnabled">false</item>
+          <item name="android:windowIsTranslucent">false</item>  
+          <item name="android:windowFrame">@null</item>  
+    </style>
 
 </resources>

@@ -21,14 +21,13 @@ public class CommentDetailActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.fragment_comments_detail);
+		
+		initUI();
 	}
 	
-	@Override
-	protected void onStart() {
+	private void initUI() {
 		// TODO Auto-generated method stub
-		super.onStart();
-		
-Button btnBack = (Button)findViewById(R.id.nav_back);
+		Button btnBack = (Button)findViewById(R.id.nav_back);
 		
 		Button btnNext = (Button)findViewById(R.id.nav_next);
 		btnNext.setVisibility(View.GONE);
@@ -44,5 +43,13 @@ Button btnBack = (Button)findViewById(R.id.nav_back);
 				CommentDetailActivity.this.finish();
 			}
 		});
+	}
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		
+
 	}
 }

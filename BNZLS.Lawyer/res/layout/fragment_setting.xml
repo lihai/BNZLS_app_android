@@ -69,7 +69,7 @@
                 style="@style/TextView_With_Drawable"
                 android:layout_width="match_parent"
                 android:layout_marginTop="@dimen/setting_padding"
-                android:text="@string/my_account" />          
+                android:text="@string/my_account_setting" />          
 
             <TextView
                 android:id="@+id/setting"
@@ -94,7 +94,7 @@
                 android:text="@string/about" />
                  -->
 
-            <!-- 
+            
             <Button
                 android:id="@+id/log_off_button"
                 style="@style/medium_button_text_style"
@@ -105,9 +105,9 @@
                 android:layout_marginTop="@dimen/group_padding"
                 android:background="@drawable/btn_red_style"
                 android:padding="@dimen/standard_padding"
-                android:text="@string/log_off" />
+                android:text="@string/btn_logoff" />
                 
-                 -->
+                
         </LinearLayout>
     </ScrollView>
 

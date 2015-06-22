@@ -40,13 +40,13 @@ public static final int TAB_INDEX = 1;
 				_adapter = new CommentListAdapter(this, _comList);
 				
 		setContentView(R.layout.fragment_comments_list);
+		
+		initUI();
 	}
 	
-	@Override
-	protected void onStart() {
+	private void initUI() {
 		// TODO Auto-generated method stub
-		super.onStart();
-		
+
 		
 		Button btnBack = (Button)findViewById(R.id.nav_back);
 		
@@ -80,5 +80,12 @@ public static final int TAB_INDEX = 1;
 				CommentsListActivity.this.finish();
 			}
 		});
+	}
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		
 	}
 }

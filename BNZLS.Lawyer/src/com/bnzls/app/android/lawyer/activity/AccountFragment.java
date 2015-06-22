@@ -20,7 +20,8 @@ public class AccountFragment extends Fragment
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
 			if(v.getId() == R.id.avatar_layout ){
-				
+				Intent intent = new Intent(getActivity(), AccountDetailActivity.class );
+				getActivity().startActivity(intent);
 			}else if(v.getId() == R.id.statistic){
 				
 			}else if(v.getId() == R.id.comments){
@@ -29,7 +30,12 @@ public class AccountFragment extends Fragment
 			}else if(v.getId() == R.id.setting){
 				
 			}else if(v.getId() == R.id.my_account){
-				
+				Intent intent = new Intent(getActivity(), AccountFunctionActivity.class);
+				getActivity().startActivity(intent);
+			}else if(v.getId() == R.id.log_off_button){
+				Intent intent = new Intent(getActivity(), LoginActivity.class);
+				getActivity().startActivity(intent);
+				getActivity().finish();
 			}
 		}
 	};
@@ -48,13 +54,14 @@ public class AccountFragment extends Fragment
 		View comView = root.findViewById(R.id.comments);
 		View setView = root.findViewById(R.id.setting);
 		View accountView = root.findViewById(R.id.my_account);
+		View logoffView = root.findViewById(R.id.log_off_button);
 		
 		avatarView.setOnClickListener(this._clickListener);
 		statView.setOnClickListener(this._clickListener);
 		comView.setOnClickListener(this._clickListener);
 		setView.setOnClickListener(this._clickListener);
 		accountView.setOnClickListener(this._clickListener);
-		
+		logoffView.setOnClickListener(this._clickListener);
 		return root;
 	}
 	

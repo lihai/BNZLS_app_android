@@ -29,14 +29,10 @@ public class CaseDetailActivity extends Activity{
 		
 		//get bundle data, and fill the UI
 		setContentView(R.layout.fragment_case_detail);
-		
+		initUI();
 	}
 	
-	@Override
-	protected void onStart() {
-		// TODO Auto-generated method stub
-		super.onStart();
-		
+	private void initUI(){
 		Button btnBack = (Button)findViewById(R.id.nav_back);
 		Button btnNext = (Button)findViewById(R.id.nav_next);
 		btnNext.setVisibility(View.GONE);
@@ -65,6 +61,14 @@ public class CaseDetailActivity extends Activity{
 				startActivity(callIntent);
 			}
 		});
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		
+		
 		
 	}
 }

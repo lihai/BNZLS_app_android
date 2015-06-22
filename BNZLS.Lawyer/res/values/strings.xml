@@ -7,12 +7,14 @@
     
     <string name="tab_label_settings">My</string>
     <string name ="tab_label_service">Service</string>
+    <string name="tab_label_cases">Cases</string>
     <string name="tab_label_rating">Rating</string>
     <string name="tab_label_home">Home</string>
     <string name="my_statistic">Information Statistic</string>
     <string name="chart">Ranking Chart</string>
     <string name="label_my_comments">My Comments</string>
     <string name="my_account">My Account</string>
+    <string name="my_account_setting">Account Options</string>
     <string name="my_ranking">My Ranking</string>
     <string name="my_setting">Setting</string>
     <string name="preference">Setting</string>
@@ -53,4 +55,22 @@
 	<string name="btn_more_txt">More…, &#8230;</string>
 	<string name="label_case_list">Case List</string>
 	<string name="label_comments_lsit">Comment List</string>
+	<string name="label_license_num">License Number</string>
+	<string name="label_firm">Working firm</string>
+	<string name="label_location">Location</string>
+	<string name="label_edu">Education background</string>
+	<string name="label_certificates">Certificates</string>
+	<string name="avatar_from_camera">Get from camera</string>
+	<string name="avatar_from_gallery">Get from gallery</string>
+    <string name="save_fail">Save failed</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_OK">OK</string>
+    <string name="label_category">Categories</string>
+    <string name="label_desc">Description</string>
+    <string name="label_gellary">Gellary</string>
+    <string name="label_daily_quota">Daily Quota</string>
+    <string name="label_response_time">Response Time Limit</string>
+    <string name="label_voice">Voice Recognition</string>
+    <string name="btn_logoff">Log off</string>
+    
 </resources>

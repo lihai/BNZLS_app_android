@@ -6,40 +6,6 @@
     
     <include layout="@layout/navigation_bar"/>
     
-    <FrameLayout 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/profile_icon"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:clickable="true"
-        android:layout_gravity="left"
-        android:src="@drawable/chat_avatar" />
-    
-   <View 
-       android:layout_width="42dp"
-       android:layout_height="42dp"
-       android:background="@drawable/triangle"
-       android:layout_gravity="bottom|right"
-       android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
-    
-    <ImageView
-        android:id="@+id/camera_icon"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_gravity="bottom|right"
-        android:src="@drawable/camera" />
-    </FrameLayout>
-
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -53,26 +19,27 @@
             <TextView
                 style="@style/contactValueTextStyle"
                 android:layout_marginTop="5dip"
-                android:text="@string/label_license_num"
+                android:text="@string/label_category"
                 android:textColor="#999999"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtLicenseNum"
+                android:id="@+id/txtCate"
                 style="@style/contactValueTextStyle"
-                android:layout_marginTop="-15dip" />
+                android:layout_marginTop="-15dip"
+                android:text="Category A, Category B" />
 
             <View style="@style/contactItemDividerStyle" />
             
             <TextView
                 style="@style/contactValueTextStyle"
                 android:layout_marginTop="5dip"
-                android:text="@string/label_firm"
+                android:text="@string/label_desc"
                 android:textColor="#999999"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtFirm"
+                android:id="@+id/txtDesc"
                 style="@style/contactValueTextStyle"
                 android:layout_marginTop="-15dip" />
 
@@ -82,42 +49,60 @@
             <TextView
                 style="@style/contactValueTextStyle"
                 android:layout_marginTop="5dip"
-                android:text="@string/label_location"
+                android:text="@string/label_gellary"
                 android:textColor="#999999"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtLocation"
+                android:id="@+id/txtGellary"
                 style="@style/contactValueTextStyle"
-                android:layout_marginTop="-15dip" />
+                android:layout_marginTop="-15dip" 
+                android:text="Click to enter gellary"/>
 
             <View style="@style/contactItemDividerStyle" />
 
             <TextView
                 style="@style/contactValueTextStyle"
                 android:layout_marginTop="5dip"
-                android:text="@string/label_edu"
+                android:text="@string/label_daily_quota"
                 android:textColor="#999999"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtEdu"
+                android:id="@+id/txtQuota"
                 style="@style/contactValueTextStyle"
-                android:layout_marginTop="-15dip" />
+                android:layout_marginTop="-15dip"
+                android:text="3 Per Day" />
 
             <View style="@style/contactItemDividerStyle" />
 
             <TextView
                 style="@style/contactValueTextStyle"
                 android:layout_marginTop="5dip"
-                android:text="@string/label_certificates"
+                android:text="@string/label_response_time"
                 android:textColor="#999999"
-                android:textSize="16sp" />
+                android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txtCert"
+                android:id="@+id/txtResponseTime"
                 style="@style/contactValueTextStyle"
-                android:layout_marginTop="-15dip" />
+                android:layout_marginTop="-15dip"
+                android:text="24 Hours" />
+            
+            <View style="@style/contactItemDividerStyle" />
+
+            <TextView
+                style="@style/contactValueTextStyle"
+                android:layout_marginTop="5dip"
+                android:text="@string/label_voice"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtVoice"
+                style="@style/contactValueTextStyle"
+                android:layout_marginTop="-15dip"
+                android:text="Click to edit" />
         </LinearLayout>
     </ScrollView>
 
