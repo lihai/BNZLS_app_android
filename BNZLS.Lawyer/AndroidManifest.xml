@@ -48,6 +48,7 @@
       	<activity 
       	    android:name="com.bnzls.app.android.lawyer.activity.AccountFunctionActivity"/>
       	<activity android:name="com.bnzls.app.android.lawyer.activity.GellaryActivity"/>
+      	<activity android:name="com.bnzls.app.android.lawyer.activity.LawyerDetailActivity"/>
         
     </application>
 
