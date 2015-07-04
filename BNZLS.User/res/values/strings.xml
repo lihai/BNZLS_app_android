@@ -57,5 +57,20 @@
 	<string name="label_appeal">Appeal</string>
 	
 	<string name="btn_comment">Goto comments</string>
+	
+	<string name="btn_crime_txt">Criminal case</string>
+	<string name="btn_divoce_txt">Divoce case</string>
+	<string name="btn_labor_txt">Labor case</string>
+	<string name="btn_realestate_txt">Realestate case</string>
+	<string name="btn_traffic_txt">Traffic</string>
+	<string name="btn_more_txt">More…</string>
+	<string name="btn_lawyer_cert_txt">Lawyer certificate</string>
+	<string name="btn_one_click_txt">One Click</string>
+	<string name="btn_promise_txt">Our Promise</string>
+	
+	<string name="btn_basic_info_txt">Basic info</string>
+	<string name="btn_hilights_txt">High Lights</string>
+	<string name="btn_comment_txt">Comments</string>
+	
 
 </resources>

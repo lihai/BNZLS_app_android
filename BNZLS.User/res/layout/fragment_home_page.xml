@@ -4,5 +4,151 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    
+    <include
+        layout="@layout/main_title_bar" />
+
+    <FrameLayout 
+        android:id="@+id/slideview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="2"
+        >
+        <android.support.v4.view.ViewPager 
+        android:id="@+id/imagepager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国家庭院校园区域名字体现"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:gravity="center" >
+
+                <View
+                    android:id="@+id/v_dot0"
+                    style="@style/dot_style"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/v_dot1"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot2"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot3"
+                    style="@style/dot_style" />
+
+                <View
+                    android:id="@+id/v_dot4"
+                    style="@style/dot_style" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        </FrameLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        
+        <Button 
+            android:id="@+id/btn_crim"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_crime_txt"/>
+        <Button 
+            android:id="@+id/btn_divoce"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_divoce_txt"
+            android:gravity="bottom"/>
+        <Button 
+            android:id="@+id/btn_labor"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_labor_txt"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        
+        <Button 
+            android:id="@+id/btn_realestate"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_realestate_txt"/>
+        <Button 
+            android:id="@+id/btn_traffic"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_traffic_txt"/>
+        <Button 
+            android:id="@+id/btn_more"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_more_txt"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+         android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        >
+        
+        <Button 
+            android:id="@+id/btn_lawyer_cert"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_lawyer_cert_txt"/>
+        <Button 
+            android:id="@+id/btn_one_click"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_one_click_txt"/>
+        <Button 
+            android:id="@+id/btn_promise"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="@string/btn_promise_txt"/>
+        
+    </LinearLayout>
 
 </LinearLayout>

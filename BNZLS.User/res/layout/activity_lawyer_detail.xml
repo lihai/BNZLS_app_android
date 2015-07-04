@@ -9,6 +9,7 @@
        />
     
     <RelativeLayout 
+        android:id="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -44,7 +45,106 @@
             android:layout_toRightOf="@+id/name"
             android:layout_marginLeft="10dp"/>
         
+        <TextView 
+            android:id="@+id/stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btn_voice"
+            android:layout_alignLeft="@+id/btn_voice"
+            android:text ="3 stars lawyer"/>
+        
+        <TextView 
+            android:id="@+id/categres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/stars"
+            android:layout_alignLeft="@+id/name"
+            android:text ="Criminal, Realestate"/>
+        
+        <TextView 
+            android:id="@+id/desc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/categres"
+            android:layout_alignLeft="@+id/categres"
+            
+            android:text ="Expertise:"/>
+        
+        <TextView 
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/categres"
+            android:layout_toRightOf="@+id/desc_title"
+            android:text ="This is the first expertise description \n This is the first expertise description"/>
+        
     </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/tab_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/head"
+        android:layout_margin="10dp">
+        <Button 
+            android:id="@+id/btn_basic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_basic_info_txt"
+            />
+        <Button 
+            android:id="@+id/btn_hi_light"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_hilights_txt"
+            />
+        <Button 
+            android:id="@+id/btn_comment"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/btn_comment_txt"
+            />"
+    </LinearLayout>
+    
+    <ScrollView 
+        android:id="@+id/basic_info_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/tab_bar"
+        android:layout_above="@+id/btn_inquire"
+        >
+        
+    </ScrollView>
+    
+    <ScrollView 
+        android:id="@+id/high_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/tab_bar"
+        android:layout_above="@+id/btn_inquire"
+        >
+        
+    </ScrollView>
+    
+    <ScrollView 
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/tab_bar"
+        android:layout_above="@+id/btn_inquire"
+        >
+        
+    </ScrollView>
+    
     
     <Button 
         android:id="@+id/btn_inquire"
