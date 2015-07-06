@@ -44,14 +44,7 @@ public class MainActivity extends Activity{
 		
 	}
 	
-	@Override
-	public View onCreateView(String name, Context context, AttributeSet attrs) {
-		// TODO Auto-generated method stub
-		
-		return super.onCreateView(name, context, attrs);
-	}
 	
-
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub

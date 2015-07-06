@@ -1,4 +1,4 @@
-package com.bnzls.app.android.lawyer.activity;
+package com.bnzls.app.android.user.activity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-import com.bnzls.app.android.lawyer.R;
+import com.bnzls.app.android.user.R;
 
 import android.app.Fragment;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,22 +19,22 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.ImageView;
-import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
+import android.widget.ImageView.ScaleType;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 
-	public static final int TAB_INDEX = 0;
+	public final static int TAB_INDEX=0;
 	
 	private ViewPager viewPager; 
-	private List<ImageView> imageViews; 
+	private List<ImageView> imageViews; // img set
 	private String[] titles; 
-	private int[] imageResId; 
+	private int[] imageResId; // img ID
 	private List<View> dots; 
-	private int currentItem = 0; 
+	private int currentItem = 0; // current img idx
 	private TextView tv_title;
 	private ScheduledExecutorService scheduledExecutorService;
 
@@ -42,6 +43,47 @@ public class HomeFragment extends Fragment {
 		public void handleMessage(android.os.Message msg) {
 			viewPager.setCurrentItem(currentItem);
 		};
+	};
+	
+	private OnClickListener shortCutBtnListener = new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			int id = v.getId();
+			BroadcastReceiver r;
+			
+			switch(id){
+			case R.id.btn_more:
+				//
+				break;
+				
+			case R.id.btn_crim:
+				//
+				break;
+				
+			case R.id.btn_divoce:
+				//
+				break;
+				
+			case R.id.btn_labor:
+				//
+				break;
+				
+			case R.id.btn_realestate:
+				//
+				break;
+				
+			case R.id.btn_traffic:
+				//
+				break;
+				
+			default:
+				break;
+			}
+			
+			((MainActivity)getActivity()).trunPager(LawyerListFragment.TAB_INDEX);
+		}
 	};
 	
 	
@@ -56,7 +98,7 @@ public class HomeFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+		View rootView = inflater.inflate(R.layout.fragment_home_page, container, false);
 		initUI(rootView);
 		
 		return rootView;
@@ -66,6 +108,8 @@ public class HomeFragment extends Fragment {
 		
 		TextView txtTitle = (TextView)rootView.findViewById(R.id.title_txt);
 		txtTitle.setText(getResources().getString(R.string.label_main_title));
+		
+		/*******************************temp....===============
 		//to check weather logon
 		TextView txtLogin = (TextView)rootView.findViewById(R.id.login_txt);
 		//TODO:set the txtlogin text
@@ -78,16 +122,29 @@ public class HomeFragment extends Fragment {
 				getActivity().startActivity(intent);
 			}
 		});
+		*********************************************************/
 		
-		imageResId = new int[] { R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.e };
+		View btnCrim = rootView.findViewById(R.id.btn_crim);
+		btnCrim.setOnClickListener(shortCutBtnListener);
+		View btnDivoce = rootView.findViewById(R.id.btn_divoce);
+		btnDivoce.setOnClickListener(shortCutBtnListener);
+		View btnLabor = rootView.findViewById(R.id.btn_labor);
+		btnLabor.setOnClickListener(shortCutBtnListener);
+		View btnRealestate = rootView.findViewById(R.id.btn_realestate);
+		btnRealestate.setOnClickListener(shortCutBtnListener);
+		View btnTraffic = rootView.findViewById(R.id.btn_traffic);
+		btnTraffic.setOnClickListener(shortCutBtnListener);
+		View btnMore = rootView.findViewById(R.id.btn_more);
+		btnMore.setOnClickListener(shortCutBtnListener);
+		
+		
+		//the image slide related:
+		imageResId = new int[] { R.drawable.d, R.drawable.e };
 		titles = new String[imageResId.length];
 		titles[0] = "Recommand Today: Lawyer Zhang\n Star of Future Award \n Perfessional in Realestate affairs.";
 		titles[1] = "Recommand Today: Lawyer Wang\n Star of Future Award \n Perfessional in Realestate affairs.";
-		titles[2] = "Recommand Today: Lawyer Li\n Star of Future Award \n Perfessional in Realestate affairs.";
-		titles[3] = "Recommand Today: Lawyer Zhao\n Star of Future Award \n Perfessional in Realestate affairs.";
-		titles[4] = "Recommand Today: Lawyer Liu\n Star of Future Award \n Perfessional in Realestate affairs.";
-		imageViews = new ArrayList<ImageView>();
 		
+		imageViews = new ArrayList<ImageView>();
 		for (int i = 0; i < imageResId.length; i++) {
 			ImageView imageView = new ImageView(getActivity());
 			imageView.setImageResource(imageResId[i]);
@@ -97,9 +154,7 @@ public class HomeFragment extends Fragment {
 		dots = new ArrayList<View>();
 		dots.add(rootView.findViewById(R.id.v_dot0));
 		dots.add(rootView.findViewById(R.id.v_dot1));
-		dots.add(rootView.findViewById(R.id.v_dot2));
-		dots.add(rootView.findViewById(R.id.v_dot3));
-		dots.add(rootView.findViewById(R.id.v_dot4));
+
 		
 		tv_title = (TextView) rootView.findViewById(R.id.tv_title);
 		tv_title.setText(titles[0]);//
@@ -176,6 +231,7 @@ public class HomeFragment extends Fragment {
 		public Object instantiateItem(View arg0, int arg1) {
 			View imgview = imageViews.get(arg1);
 			((ViewPager) arg0).addView(imgview);
+			/**
 			imgview.setOnClickListener(new OnClickListener() {
 				
 				@Override
@@ -185,6 +241,7 @@ public class HomeFragment extends Fragment {
 					HomeFragment.this.getActivity().startActivity(intent);
 				}
 			});
+			**/
 			return imageViews.get(arg1);
 		}
 
@@ -217,8 +274,6 @@ public class HomeFragment extends Fragment {
 		public void finishUpdate(View arg0) {
 
 		}
-		
 	}
-	
 	
 }

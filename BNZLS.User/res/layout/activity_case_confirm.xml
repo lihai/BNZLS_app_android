@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/navigation_bar"/>
+    
+    <TextView
+        android:id="@+id/question_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        android:text="!HERE \n !PUTS \n !THE \n !STATEMENT"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gender"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <RadioGroup 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/custom_border"
+        style="@style/content_margin_style"
+        
+        >
+        <RadioButton 
+            android:id="@+id/Male"
+            android:text="Mr."
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        
+        <RadioButton 
+            android:id="@+id/Female"
+            android:text="Ms."
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </RadioGroup>
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_name"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        android:hint="Write your name here."
+        />
+    
+    <TextView 
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_cellphone"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <EditText
+        android:id="@+id/txtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        android:hint="Write your mobile number here."
+        />
+    
+    <TextView 
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_veri_code"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/txtcode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        
+        />
+    <Button android:id="@+id/btn_get_code"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginRight="@dimen/content_margin"
+        android:text="@string/btn_get_code"/>
+    </LinearLayout>
+
+    <Button 
+	    android:id="@+id/btn_commit"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/log_in_button_height"
+	    android:background="@drawable/btn_plain_green_style"
+	    android:text="@string/label_commit"
+	    android:layout_marginLeft="@dimen/group_padding"
+	    android:layout_marginRight="@dimen/group_padding"
+	    android:layout_marginTop="@dimen/group_padding"
+	    />
+</LinearLayout>

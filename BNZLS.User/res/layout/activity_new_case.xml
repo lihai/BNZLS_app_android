@@ -4,6 +4,75 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <include layout="@layout/navigation_bar"/>
     
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/label_lawyer"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:textSize="18sp"
+            android:text="Zhang San (Finance, Labor)"
+            />
+        </LinearLayout>
+        
+     <TextView 
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_case_detail"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <EditText
+        android:id="@+id/question_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        android:hint="Type the case detail here."
+        />
+    
+     <TextView 
+        android:id="@+id/appeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_help_need"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <EditText
+        android:id="@+id/appeal_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/custom_border"
+        android:textSize="18sp"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        android:hint="Type your appeal here, what kind help you want get."
+        />
 
 </LinearLayout>

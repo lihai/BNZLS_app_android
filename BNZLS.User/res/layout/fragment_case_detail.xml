@@ -16,6 +16,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:text="@string/label_category"
+            android:layout_marginRight="@dimen/content_margin"
+            />
+        
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/secondary_text_dark"
+            android:textSize="18sp"
+            android:text="2015-03-02 10:23"
+            />
+        </LinearLayout>
+
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/group_padding"
+        android:layout_marginLeft="@dimen/group_padding"
+        android:layout_marginRight="@dimen/group_padding">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
             android:text="@string/label_starttime"
             android:layout_marginRight="@dimen/content_margin"
             />
@@ -30,6 +56,7 @@
             />
         </LinearLayout>
         
+            
     <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,12 +68,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="@string/label_category"
+            android:text="@string/label_answer_time"
             android:layout_marginRight="@dimen/content_margin"
             />
         
         <TextView
-            android:id="@+id/category"
+            android:id="@+id/answertime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/secondary_text_dark"
@@ -76,30 +103,7 @@
         android:text="I want to sell my house, which is the legacy property that my grand grand parent left me, but I can't find the file or documents to prove it."
         />
     
-    <LinearLayout 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/group_padding"
-        android:layout_marginLeft="@dimen/group_padding"
-        android:layout_marginRight="@dimen/group_padding">
-        <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/label_answer_time"
-            android:layout_marginRight="@dimen/content_margin"
-            />
-        
-        <TextView
-            android:id="@+id/answertime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/secondary_text_dark"
-            android:textSize="18sp"
-            android:text="2015-03-02 10:23"
-            />
-        </LinearLayout>
+    
         
     <Button 
         android:id="@+id/btn_inquire"

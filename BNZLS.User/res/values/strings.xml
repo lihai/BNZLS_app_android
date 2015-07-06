@@ -6,6 +6,7 @@
     
     <string name="tab_label_settings">My</string>
     <string name ="tab_label_service">Service</string>
+    <string name="tab_label_cases">Cases</string>
     <string name="tab_label_rating">Rating</string>
     <string name="tab_label_home">Home</string>
     <string name="my_statistic">Information Statistic</string>
@@ -48,6 +49,7 @@
 	<string name="label_lawyer_name">Lawyer Name</string>
 	
 	<string name="label_telephone">Telephone</string>
+	<string name="label_cellphone">Mobile phone</string>
 	<string name="label_title">Title</string>
 	<string name="label_name">Name</string>
 	<string name="label_starttime">Start time</string>
@@ -72,5 +74,19 @@
 	<string name="btn_hilights_txt">High Lights</string>
 	<string name="btn_comment_txt">Comments</string>
 	
+	<string name="label_main_title">BNZLS - Find the right lawyer!</string>
+	<string name="label_lawyer">Lawyer</string>
+	<string name="label_case_detail">Case Detail</string>
+	<string name="label_help_need">Help you want</string>
+	<string name="label_your_title">Your title</string>
+	<string name="label_gender">Gender</string>
+	<string name="label_veri_code">Verification code</string>
+	<string name="btn_get_code">Get code</string>
+	<string name="btn_case_list">My Cases</string>
+	<string name="btn_my_lawyers">My Lawyers</string>
+	<string name="my_account_setting">Settings</string>
+	<string name="my_setting">Settings</string>
+	<string name="label_feedback">Feedback</string>
+	<string name="btn_logoff">Log off</string>
 
 </resources>

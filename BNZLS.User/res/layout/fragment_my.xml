@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/main_title_bar"/>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        
+        >
+        <ImageView android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_avatar"
+            android:layout_centerInParent="true"/>
+        
+        <TextView android:id="@+id/txtName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/group_padding"
+            android:text="Li Si"/>
+        
+        <Button
+                android:id="@+id/sign_in_button"
+                android:layout_below="@+id/avatar"
+                android:layout_centerHorizontal="true"
+                style="@style/medium_button_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/log_in_button_height"
+                android:layout_marginTop="@dimen/group_padding"
+                android:background="@drawable/btn_plain_blue_style"
+                android:text="@string/action_sign_in_register"
+                android:visibility="gone"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnCaseList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_case_list"/>
+        
+        <Button android:id="@+id/btnLawyerList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_my_lawyers"/>
+    </LinearLayout>
+    
+    <TextView
+                android:id="@+id/setting"
+                style="@style/TextView_With_Drawable"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/setting_padding"
+                android:text="@string/my_setting" />          
+
+    <TextView
+        android:id="@+id/feedback"
+        style="@style/TextView_With_Drawable"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="@string/my_setting" />
+            
+     <Button
+         android:id="@+id/log_off_button"
+         style="@style/medium_button_text_style"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/setting_item_height"
+         android:layout_marginLeft="@dimen/standard_padding"
+         android:layout_marginRight="@dimen/standard_padding"
+         android:layout_marginTop="@dimen/group_padding"
+         android:background="@drawable/btn_red_style"
+         android:padding="@dimen/standard_padding"
+         android:text="@string/btn_logoff" />
+            
+</LinearLayout>
