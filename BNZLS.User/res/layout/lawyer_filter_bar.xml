@@ -11,7 +11,16 @@
         android:text="@string/btn_lawyercat"
         android:layout_weight="1"
         android:background="@android:color/transparent"
+        android:visibility="gone"
         />
+    
+    <Spinner 
+        android:id="@+id/spn_cat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"/>
     <View 
         android:layout_height="match_parent"
         android:layout_width="2dp"
@@ -24,7 +33,16 @@
         android:text="@string/btn_location"
         android:layout_weight="1"
         android:background="@android:color/transparent"
+        android:visibility="gone"
         />
+    
+    <Spinner 
+        android:id="@+id/spn_loc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"/>
     
     <View 
         android:layout_width="2dp"
@@ -38,7 +56,15 @@
         android:text="@string/btn_sort"
         android:layout_weight="1"
         android:background="@android:color/transparent"
+        android:visibility="gone"
         />
     
+    <Spinner 
+        android:id="@+id/spn_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"/>
 
 </LinearLayout>

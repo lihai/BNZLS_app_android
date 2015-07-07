@@ -67,7 +67,7 @@
         style="@style/TextView_With_Drawable"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
-        android:text="@string/my_setting" />
+        android:text="@string/label_feedback" />
             
      <Button
          android:id="@+id/log_off_button"

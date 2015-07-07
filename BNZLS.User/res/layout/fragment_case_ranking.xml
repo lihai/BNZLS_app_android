@@ -3,6 +3,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
+    <include layout="@layout/main_title_bar"
+        />
     
+    <RelativeLayout 
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        
+        android:layout_margin="10dp"
+        >
+        
+        <ImageView 
+            android:id="@+id/lawyer_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/my_avatar"/>
+        
+        <TextView 
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="Brad Pitt"
+            android:layout_toRightOf="@+id/lawyer_avatar"
+            />
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <TextView 
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_prof_comm"/>
+        
+        <TextView 
+            android:id="@+id/btn_prof"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Click to choose"
+            android:background="@drawable/custom_border"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_must"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <TextView 
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_serv_comm"/>
+        
+        <TextView 
+            android:id="@+id/btn_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Click to choose"
+            android:background="@drawable/custom_border"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_must"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_case_detail"
+        android:layout_marginLeft="@dimen/content_margin"
+        android:layout_marginRight="@dimen/content_margin"
+        android:layout_marginTop="@dimen/group_padding"
+        />
+    
+    <EditText
+        android:id="@+id/txtComment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/custom_border"
+        style="@style/content_margin_style"
+        android:gravity="top|left"
+        android:hint="Type the case detail here."
+        />
+    
+    <Button 
+	    android:id="@+id/btn_commit"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/log_in_button_height"
+	    android:background="@drawable/btn_plain_green_style"
+	    android:text="@string/label_commit"
+	    android:layout_marginLeft="@dimen/group_padding"
+	    android:layout_marginRight="@dimen/group_padding"
+	    android:layout_marginTop="@dimen/group_padding"
+	    />
 
 </LinearLayout>

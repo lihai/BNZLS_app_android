@@ -7,7 +7,7 @@
     <item type="dimen" format="dimension|reference" name="list_item_height">60dp</item>
     <item type="dimen" format="dimension|reference" name="group_padding">20dp</item>
     <item type="dimen" format="dimension|reference" name="standard_padding">10dp</item>
-    <item type="dimen" format="dimension|reference" name="content_margin">15dp</item>
+    <item type="dimen" format="dimension|reference" name="content_margin">10dp</item>
     <item type="dimen" format="dimension|reference" name="setting_item_height">44dp</item>
     <item type="dimen" format="dimension|reference" name="progress_bar_top">150dp</item>
     <item type="dimen" format="dimension|reference" name="log_in_padding">25dp</item>

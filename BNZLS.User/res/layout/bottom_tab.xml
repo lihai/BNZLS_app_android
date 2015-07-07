@@ -33,7 +33,7 @@
     	android:layout_height="wrap_content"
     	android:drawableTop="@drawable/tab_service_style"
     	android:layout_weight="1"
-    	android:text="@string/tab_label_cases"
+    	android:text="@string/tab_label_lawyers"
     	android:gravity="center_horizontal"
     	android:textAppearance="@style/TabLabelApperance"/>
     <TextView android:id="@+id/tab_settings" 

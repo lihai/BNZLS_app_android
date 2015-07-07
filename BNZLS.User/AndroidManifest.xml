@@ -30,6 +30,12 @@
         
         <activity
             android:name="com.bnzls.app.android.user.activity.CaseConfirmActivity"></activity>
+        
+        <activity
+            android:name="com.bnzls.app.android.user.activity.CaseListActivity"></activity>
+        
+        <activity 
+            android:name="com.bnzls.app.android.user.activity.CaseRankingActivity"></activity>
     </application>
 
 </manifest>
